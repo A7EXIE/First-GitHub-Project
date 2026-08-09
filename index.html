@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fanta — Exploziv. Fructat. Al tău.</title>
+<meta name="description" content="Descoperă lumea Fanta: arome fructate exploziv de bune, energie pură și distracție în fiecare sticlă.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bubbles-bg" id="bubblesBg" aria-hidden="true"></div>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">Fanta</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#arome">Arome</a>
+      <a href="#experienta">Experiență</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#comunitate">Comunitate</a>
+    </nav>
+    <a href="#arome" class="btn btn-nav">Alege aroma</a>
+    <button class="burger" id="burger" aria-label="Deschide meniul" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#arome">Arome</a>
+    <a href="#experienta">Experiență</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#comunitate">Comunitate</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-content">
+      <p class="eyebrow reveal">100% fructat • 0% plictiseală</p>
+      <h1 class="hero-title reveal">
+        <span class="hero-line">Simte gustul</span>
+        <span class="hero-line hero-line-accent">exploziei de fructe</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Fanta e bula de energie care transformă orice moment plictisitor
+        într-o petrecere. Alege-ți aroma, deschide sticla, lasă distracția să curgă.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#arome" class="btn btn-primary">Descoperă aromele</a>
+        <a href="#experienta" class="btn btn-ghost">Vezi povestea</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num" data-count="14">0</span><span class="stat-label">arome în lume</span></div>
+        <div class="stat"><span class="stat-num" data-count="190">0</span><span class="stat-label">țări</span></div>
+        <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-label">% distracție</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="bottle-stage">
+        <div class="bottle-glow"></div>
+        <svg class="bottle" viewBox="0 0 240 520" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="liquid" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffb347"/>
+              <stop offset="100%" stop-color="#ff6a00"/>
+            </linearGradient>
+            <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+              <stop offset="45%" stop-color="#ffffff" stop-opacity="0.08"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0.25"/>
+            </linearGradient>
+          </defs>
+          <path d="M95 10 h50 v55 c0 12 12 16 20 28 c14 20 22 40 22 70 v300 c0 25 -20 45 -45 45 h-44 c-25 0 -45 -20 -45 -45 v-300 c0 -30 8 -50 22 -70 c8 -12 20 -16 20 -28 Z"
+                fill="url(#liquid)" stroke="rgba(0,0,0,0.15)" stroke-width="2"/>
+          <path d="M95 10 h50 v55 c0 12 12 16 20 28 c14 20 22 40 22 70 v300 c0 25 -20 45 -45 45 h-44 c-25 0 -45 -20 -45 -45 v-300 c0 -30 8 -50 22 -70 c8 -12 20 -16 20 -28 Z"
+                fill="url(#glass)"/>
+          <rect x="60" y="220" width="120" height="150" rx="14" fill="rgba(255,255,255,0.9)"/>
+          <text x="120" y="270" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="34" fill="#ff6a00">Fanta</text>
+          <text x="120" y="300" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="600" font-size="14" letter-spacing="3" fill="#ff8a3d">ORANGE</text>
+          <line x1="78" y1="320" x2="162" y2="320" stroke="#ffd8ad" stroke-width="2"/>
+          <text x="120" y="340" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="600" font-size="10" letter-spacing="1" fill="#ffb066">GUST FRUCTAT</text>
+          <text x="120" y="356" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="600" font-size="10" letter-spacing="1" fill="#ffb066">ORIGINAL</text>
+          <ellipse cx="120" cy="30" rx="18" ry="8" fill="#ff6a00"/>
+        </svg>
+        <div class="floaty floaty-1">🍊</div>
+        <div class="floaty floaty-2">✨</div>
+        <div class="floaty floaty-3">🫧</div>
+      </div>
+    </div>
+
+    <a href="#arome" class="scroll-cue" aria-label="Derulează în jos">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>PORTOCALE ★ CĂPȘUNI ★ STRUGURI ★ ANANAS ★ MANGO ★ LĂMÂIE ★ ZMEURĂ ★ MERE ★ </span>
+      <span>PORTOCALE ★ CĂPȘUNI ★ STRUGURI ★ ANANAS ★ MANGO ★ LĂMÂIE ★ ZMEURĂ ★ MERE ★ </span>
+    </div>
+  </div>
+
+  <!-- FLAVORS -->
+  <section class="flavors" id="arome">
+    <div class="section-head reveal">
+      <p class="eyebrow">Gama de arome</p>
+      <h2>Alege-ți vibe-ul de azi</h2>
+      <p class="section-sub">Fiecare aromă are propria personalitate. Atinge un card ca să vezi culoarea prinzând viață.</p>
+    </div>
+
+    <div class="flavor-grid" id="flavorGrid">
+      <button class="flavor-card reveal" style="--c1:#ff8a00; --c2:#ff5100;" data-flavor="Orange">
+        <span class="flavor-emoji">🍊</span>
+        <span class="flavor-name">Orange</span>
+        <span class="flavor-desc">Clasicul exploziv, dulce-acrișor</span>
+      </button>
+      <button class="flavor-card reveal" style="--c1:#ff2f6e; --c2:#c30052;" data-flavor="Strawberry">
+        <span class="flavor-emoji">🍓</span>
+        <span class="flavor-name">Strawberry</span>
+        <span class="flavor-desc">Cremos, dulce, de vară</span>
+      </button>
+      <button class="flavor-card reveal" style="--c1:#8a3dff; --c2:#4b00c2;" data-flavor="Grape">
+        <span class="flavor-emoji">🍇</span>
+        <span class="flavor-name">Grape</span>
+        <span class="flavor-desc">Intens și mătăsos</span>
+      </button>
+      <button class="flavor-card reveal" style="--c1:#ffd400; --c2:#ff9d00;" data-flavor="Pineapple">
+        <span class="flavor-emoji">🍍</span>
+        <span class="flavor-name">Pineapple</span>
+        <span class="flavor-desc">Tropical, acidulat, viu</span>
+      </button>
+      <button class="flavor-card reveal" style="--c1:#ffb800; --c2:#ff6b00;" data-flavor="Mango">
+        <span class="flavor-emoji">🥭</span>
+        <span class="flavor-name">Mango</span>
+        <span class="flavor-desc">Catifelat și exotic</span>
+      </button>
+      <button class="flavor-card reveal" style="--c1:#e8ff3d; --c2:#a8d600;" data-flavor="Lemon">
+        <span class="flavor-emoji">🍋</span>
+        <span class="flavor-name">Lemon</span>
+        <span class="flavor-desc">Răcoritor, plin de energie</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experienta">
+    <div class="exp-visual reveal">
+      <div class="exp-circle">
+        <div class="exp-ring r1"></div>
+        <div class="exp-ring r2"></div>
+        <div class="exp-ring r3"></div>
+        <span class="exp-emoji">🥤</span>
+      </div>
+    </div>
+    <div class="exp-content">
+      <p class="eyebrow reveal">De ce Fanta</p>
+      <h2 class="reveal">Nu e doar o băutură. E o stare.</h2>
+      <div class="exp-list">
+        <div class="exp-item reveal">
+          <div class="exp-num">01</div>
+          <div>
+            <h3>Explozie de gust real de fruct</h3>
+            <p>Rețete inspirate din fructe adevărate, gândite să surprindă de la prima gură.</p>
+          </div>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-num">02</div>
+          <div>
+            <h3>Bule care aduc energie</h3>
+            <p>Carbonatare perfect echilibrată — suficient de vie cât să te trezească, nu să te copleșească.</p>
+          </div>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-num">03</div>
+          <div>
+            <h3>Culoare, joacă, comunitate</h3>
+            <p>Fanta e despre momentele împărtășite: petreceri, prieteni, muzică și veselie fără filtru.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="galerie">
+    <div class="section-head reveal">
+      <p class="eyebrow">Galerie</p>
+      <h2>Momente în culori Fanta</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gcard reveal g-big" style="--bg: linear-gradient(135deg,#ff8a00,#ff3d00);">
+        <span>🎉</span>
+        <p>Vară fără pauză</p>
+      </div>
+      <div class="gcard reveal" style="--bg: linear-gradient(135deg,#ff2f6e,#c30052);">
+        <span>🍓</span>
+        <p>Dulce-acrișor perfect</p>
+      </div>
+      <div class="gcard reveal" style="--bg: linear-gradient(135deg,#8a3dff,#4b00c2);">
+        <span>🎶</span>
+        <p>Sunetul distracției</p>
+      </div>
+      <div class="gcard reveal" style="--bg: linear-gradient(135deg,#ffd400,#ff9d00);">
+        <span>🏖️</span>
+        <p>Plajă & bule</p>
+      </div>
+      <div class="gcard reveal g-big" style="--bg: linear-gradient(135deg,#00c6ff,#0072ff);">
+        <span>🌈</span>
+        <p>Toate aromele, o singură vibe</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS / COMMUNITY -->
+  <section class="community" id="comunitate">
+    <div class="section-head reveal">
+      <p class="eyebrow">Comunitate</p>
+      <h2>Fanii spun tot</h2>
+    </div>
+    <div class="testi-track-wrap reveal">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <p>"Prima gură și gata, sunt îndrăgostit/ă de aroma de mango. Absolut superbă!"</p>
+          <div class="testi-author">— Ana, 24</div>
+        </div>
+        <div class="testi-card">
+          <p>"O deschid la fiecare petrecere. Toată lumea întreabă ce aromă e."</p>
+          <div class="testi-author">— Radu, 19</div>
+        </div>
+        <div class="testi-card">
+          <p>"Design-ul sticlei + gustul = combo perfect pentru vară."</p>
+          <div class="testi-author">— Maria, 27</div>
+        </div>
+        <div class="testi-card">
+          <p>"Zmeura e underrated. Cea mai bună aromă, luptați-mă."</p>
+          <div class="testi-author">— Vlad, 21</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-inner reveal">
+      <h2>Gata să simți explozia?</h2>
+      <p>Găsește-ți aroma preferată la cel mai apropiat magazin și transformă orice zi într-o sărbătoare.</p>
+      <a href="#arome" class="btn btn-primary btn-lg">Alege-ți aroma acum</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">Fanta</span>
+      <p>Site realizat ca proiect personal / educațional. Fanta® este o marcă înregistrată a The Coca-Cola Company — acest site nu este afiliat oficial.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#arome">Arome</a>
+      <a href="#experienta">Experiență</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#comunitate">Comunitate</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© <span id="year"></span> Fanta Fan Site. Băutură cu moderație. 🍊</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
